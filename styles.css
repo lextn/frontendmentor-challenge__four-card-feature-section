@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(0, 0%, 98%);
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+}
+
+header {
+  margin: 5rem auto;
+  max-width: 80vw;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 1.5rem;
+  color: hsl(234, 12%, 34%);
+}
+
+header span {
+  font-weight: 200;
+}
+
+header p {
+  margin: 0 auto;
+  max-width: 55ch;
+  line-height: 1.6rem;
+  color: hsl(229, 6%, 66%);
+}
+
+main {
+  margin: 0 auto;
+  max-width: 80vw;
+}
+
+.card {
+  position: relative;
+  background-color: white;
+  margin: 1.5rem auto;
+  padding: 1.5rem;
+  max-width: 350px;
+  height: 230px;
+  box-shadow: 0 5px 20px -6px rgb(217, 225, 233), 0 20px 25px -10px rgb(206, 220, 236);
+  border-radius: 3%;
+}
+
+.card h2 {
+  margin-top: 0;
+  margin-bottom: 0.3rem;
+  font-size: 1.3rem;
+  color: hsl(234, 12%, 34%);
+}
+
+.card p {
+  margin-bottom: 2rem;
+  max-width: 35ch;
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+  color: hsl(229, 6%, 66%);
+}
+
+.card img {
+  position: absolute;
+  right: 1.5rem;
+  bottom: 1.5rem;
+  width: 58px;
+}
+
+.card-supervisor {
+  border-top: 4px solid hsl(180, 62%, 55%);
+}
+
+.card-team-builder {
+  border-top: 4px solid hsl(0, 78%, 62%);
+}
+
+.card-karma {
+  border-top: 4px solid hsl(34, 97%, 64%);
+}
+
+.card-calculator {
+  border-top: 4px solid hsl(212, 86%, 64%);
+}
+
+@media only screen and (min-width: 1320px) {   
+  header {
+    margin-bottom: 2rem;
+  }
+
+  header h1 {
+    font-size: 2.3rem;
+  }
+
+  main {
+    margin-bottom: 5rem;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .card {
+    width: 350px;
+    height: 250px;
+  }
+
+  .card img {
+    width: 64px;
+  }
+
+  .card-supervisor {
+    margin-right: 2rem;
+    grid-row: 1 / 3;
+    align-self: center;
+    justify-self: right;
+  }
+  
+  .card-calculator {
+    margin-left: 2rem;
+    grid-row: 1 / 3;
+    grid-column: 3 / 4;
+    align-self: center;
+    justify-self: left;
+  }
+}
